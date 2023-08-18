@@ -51,11 +51,7 @@ export function getStaticProps({ params }) {
 
 export function getStaticPaths() {
   return {
-    paths: [
-      { params: { slug: ["index"] } },
-      { params: { slug: ["about"] } },
-      { params: { slug: [""] } },
-    ],
+    paths: [{ params: { slug: ["index"] } }, { params: { slug: ["about"] } }],
     fallback: "blocking",
   };
 }
